@@ -10,7 +10,7 @@ from telegram.constants import ChatAction
 from src.services.transcription import TranscriptionService
 from src.services.translation import TranslationService
 from src.services.speech import SpeechService
-from src.services.assistant import MistralAssistantService
+from src.services.gemini_assistant import GeminiAssistantService
 from src.services.llama_assistant import Llama31AssistantService
 from src.config import Config
 from faster_whisper import WhisperModel
@@ -31,7 +31,7 @@ class BotHandlers:
         self.transcription_service = TranscriptionService()
         self.translation_service = TranslationService()
         self.speech_service = SpeechService()
-        self.assistant_service = MistralAssistantService()
+        self.assistant_service = GeminiAssistantService()
         self.tour_assistant_service = Llama31AssistantService()
         
         # Временное хранилище для данных перевода
