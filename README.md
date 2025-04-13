@@ -60,8 +60,7 @@ MODEL_DIR=./models
 LOG_LEVEL=INFO
 
 # Опционально, для расширенной функциональности
-MISTRAL_API_KEY=your_mistral_api_key_here
-MISTRAL_MODEL=mistral-tiny
+GEMINI_API_KEY=your_gemini_api_key_here
 ```
 
 ## Запуск
@@ -90,7 +89,7 @@ docker-compose up -d
 
 - `/start` - Начать работу с ботом
 - `/lang` - Сменить язык интерфейса
-- `/ask` - Задать вопрос ИИ-ассистенту (если настроен MISTRAL_API_KEY)
+- `/ask` - Задать вопрос ИИ-ассистенту (если настроен GEMINI_API_KEY)
 
 ## Технические детали
 
